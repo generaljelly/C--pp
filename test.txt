@@ -1,0 +1,25 @@
+//ofstream newFile("hehe.txt");
+
+    //newFile << "what a silly billy";
+
+    /*
+
+    std::string text;
+
+    std::ifstream readFile("hehe.txt");
+
+    while (getline(readFile, text)) {
+        std::cout << text;
+    }
+
+    readFile.close();
+
+    */
+
+   FILE * pfile;
+   pfile = fopen("hehe.txt", "a");
+
+   if (pfile != NULL) {
+    fputs("hewwww", pfile);
+    fclose(pfile);
+   } 
